@@ -3,9 +3,9 @@ const ingredients = ['Картошка', 'Грибы', 'Чеснок', 'Поми
 const listItemRef = document.querySelector('#ingredients');
 
 const createListItems = items => {
-  return items.map(items => {
+  return items.map(item => {
     const itemRef = document.createElement('li');
-    itemRef.textContent = items;
+    itemRef.textContent = item;
     return itemRef;
   });
 };
